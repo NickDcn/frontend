@@ -88,8 +88,8 @@ ports:
 
 liveness:
 #  path: /
-  port: 3000
+  port: http
 
 readiness:
 #  path: /
-  port: 3000
+  port: http
