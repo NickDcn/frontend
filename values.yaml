@@ -87,9 +87,9 @@ ports:
   protocol: TCP
 
 liveness:
-#  path: /
+  path: /app
   port: http
 
 readiness:
-#  path: /
+  path: /app
   port: http
