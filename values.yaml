@@ -87,9 +87,9 @@ ports:
   protocol: TCP
 
 liveness:
-  path: rivalscan.com/app
+#  path: rivalscan.com/app
   port: 443
 
 readiness:
-  path: rivalscan.com/app
+#  path: rivalscan.com/app
   port: 443

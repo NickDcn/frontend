@@ -38,17 +38,11 @@ spec:
               containerPort: {{ .Values.ports.containerport }}
               protocol: {{ .Values.ports.protocol }}
           livenessProbe:
-            httpGet:
-              scheme: HTTPS
-              path: {{ .Values.readiness.path }}
+            tcpSocket:
               port: {{ .Values.readiness.port }}
-              timeoutSeconds: 10
           readinessProbe:
-            httpGet:
-              scheme: HTTPS
-              path: {{ .Values.liveness.path }}
+            tcpSocket:
               port: {{ .Values.liveness.port }}
-              timeoutSeconds: 10
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
