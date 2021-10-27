@@ -82,14 +82,14 @@ tolerations: []
 affinity: {}
 
 ports:
-  name: http
-  containerport: 3000
+  name: https
+  containerport: 443
   protocol: TCP
 
-#liveness:
-#  path: /app
-#  port: http
+liveness:
+  path: rivalscan.com/app
+  port: 443
 
-#readiness:
-#  path: /app
-#  port: http
+readiness:
+  path: rivalscan.com/app
+  port: 443
