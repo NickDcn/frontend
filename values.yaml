@@ -81,15 +81,15 @@ tolerations: []
 
 affinity: {}
 
-ports:
-  name: http
-  containerport: 3000
-  protocol: TCP
+#ports:
+#  name: http
+#  containerport: 3000
+#  protocol: TCP
 
-liveness:
-  path: /app
-  port: http
+#liveness:
+#  path: /app
+#  port: http
 
-readiness:
-  path: /app
-  port: http
+#readiness:
+#  path: /app
+#  port: http
