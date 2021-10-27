@@ -42,7 +42,7 @@ spec:
               scheme: HTTPS
               path: {{ .Values.readiness.path }}
               port: {{ .Values.readiness.port }}
-              timeoutSeconds:10
+              timeoutSeconds: 10
           readinessProbe:
             httpGet:
               scheme: HTTPS
