@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: 10.64.32.210:8443/frontend
+  repository: private.repo/frontend
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
